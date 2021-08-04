@@ -53,33 +53,109 @@
 <body>
 
     <div class="wrapper">
+        <div class="left">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/voover-icon.svg" alt="logo" class="img-fluid">
+                </a>
+            </div>
+            <div class="user-detail">
+                <div class="desktop-detail dropdown">
+                    <button class="dropdown-toggle" type="button" id="dropdownMenuButton1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <div class="avtar">
+                            <img src="images/profile.png" alt="profile" class="img-fluid">
+                        </div>
+                        <div class="detail">
+                            <p>Adam H <span class="link">voover.co/adamh</span></p>                            
+                        </div>
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            <span>View Profile Page</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"></path><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                            <span>Create New Event</span>
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"></path></svg>
+                            <span>Sign Out</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="mobile-dropdown">
+                    <div class="dropdown">
+                        <button class="dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="avtar">
+                                <img src="images/profile.png" alt="profile" class="img-fluid">
+                            </div>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                            <span>View Profile Page</span>
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M23 7l-7 5 7 5V7z"></path><rect x="1" y="5" width="15" height="14" rx="2" ry="2"></rect></svg>
+                            <span>Create New Event</span>
+                          </a>
+                          <a class="dropdown-item" href="#">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 21H5a2 2 0 01-2-2V5a2 2 0 012-2h4M16 17l5-5-5-5M21 12H9"></path></svg>
+                            <span>Sign Out</span>
+                          </a>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            <div class="burger-menu">
+                <span class="iconbar"></span>
+                <span class="iconbar"></span>
+            </div>            
+        </div>
 
+        <div class="menu">
+            <div class="user-detail">
+                <div class="desktop-detail">
+                    <div class="avtar">
+                        <img src="images/profile.png" alt="profile" class="img-fluid">
+                    </div>
+                    <div class="detail">
+                        <p>Adam H</p>
+                        <a href="#">
+                            voover.co/adamh
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <ul>
+                <li><a href="#">Sign Out</a></li>
+            </ul>
+        </div>
 
         <div class="right">
 
             <div class="right-main">
                 <div class="section-title">
-                    <h2>Create a Job</h2>
+                    <h5>Field to be manually re-ordered and saved</h5>
                 </div>
-
     
                 <form action="">
                     <div class="form-group skill width-640">
                         <select name="" class="form-control custom-select select2-selection" multiple="multiple" id="">
+                            <option value="">3D Animation</option>
                             <option value="">Abstract</option>
                             <option value="">Adobe creative suite</option>
                             <option value="">Adobe Experience Manager</option>
-                            <option value="">Analytics</option>
-                            <option value="">Entertainment</option>
-                            <option value="">Privacy</option>
-                            <option value="">Accounting</option>
-                            <option value="">Aerospace</option>
+                            <option value="">Entertainment manager</option>
+                            <option value="">Environment</option>
+                            <option value="">Windows Server</option>
                         </select>
-                        <label for="">Skills</label>
                     </div>
                     
                     <div class="c-btn">
-                        <button class="btn btn-comman">Save job</button>
+                        <button class="btn btn-comman">create achivement</button>
                     </div>
                 </form>
             </div>
@@ -95,6 +171,7 @@
 	<script src="js/select2.full.min.js"></script>
 	<script src="js/moment.min.js"></script>
 	<script src="js/bootstrap-datepicker.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
  
